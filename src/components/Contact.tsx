@@ -69,7 +69,7 @@ const Contact = () => {
           {/* Map Embed */}
           <div className="h-[400px] rounded-xl overflow-hidden shadow-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.5!2d80.09!3d26.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4b7c8c8c8c8d%3A0x8c8c8c8c8c8c8c8c!2sDRS%20Food%20Point!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4287.468024965042!2d79.49039342742853!3d27.031083204068455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e1bb15085feb1%3A0x9d7cc4fa442f09bc!2sDRS%20Food%20Point!5e1!3m2!1sen!2sin!4v1766749105745!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
