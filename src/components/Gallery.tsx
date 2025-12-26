@@ -2,7 +2,6 @@ import { useState } from "react";
 import { X } from "lucide-react";
 
 import burgerImg from "@/assets/burger.jpg";
-import cakeImg from "@/assets/cake.jpg";
 import chilliPotatoImg from "@/assets/chilli-potato.jpg";
 import noodlesImg from "@/assets/noodles.jpg";
 
@@ -25,7 +24,6 @@ const galleryImages = [
   { src: burgerImg, alt: "Delicious Burger", category: "food" },
   { src: noodlesImg, alt: "Hot Noodles", category: "food" },
   { src: chilliPotatoImg, alt: "Chilli Potato", category: "food" },
-  { src: cakeImg, alt: "Sweet Cake", category: "dessert" },
 ];
 
 const Gallery = () => {
