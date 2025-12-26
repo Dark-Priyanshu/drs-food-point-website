@@ -3,11 +3,13 @@ import burgerImg from '@/assets/burger.jpg';
 import chilliPotatoImg from '@/assets/chilli-potato.jpg';
 import noodlesImg from '@/assets/noodles.jpg';
 import cakeImg from '@/assets/cake.jpg';
+import dosaImg from '@/assets/dosa.jpg';
 
 const Popular = () => {
   const popularItems = [
     { name: 'Pizza', image: pizzaImg, description: 'Cheesy & delicious' },
     { name: 'Burger', image: burgerImg, description: 'Juicy & satisfying' },
+    { name: 'Dosa', image: dosaImg, description: 'Crispy South Indian' },
     { name: 'Chilli Potato', image: chilliPotatoImg, description: 'Crispy & spicy' },
     { name: 'Noodles', image: noodlesImg, description: 'Indo-Chinese favorite' },
     { name: 'Cake', image: cakeImg, description: 'Fresh from bakery' },
