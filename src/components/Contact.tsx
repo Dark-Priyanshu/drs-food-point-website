@@ -56,7 +56,7 @@ const Contact = () => {
 
             <Button size="lg" className="w-full gap-2" asChild>
               <a
-                href="https://maps.google.com/?q=DRS+Food+Point+Saurikh+Rura+Uttar+Pradesh"
+                href="https://maps.app.goo.gl/BTxuyKsHoez2cbes9"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -69,7 +69,7 @@ const Contact = () => {
           {/* Map Embed */}
           <div className="h-[400px] rounded-xl overflow-hidden shadow-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.5!2d80.1!3d26.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDI0JzAwLjAiTiA4MMKwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.5!2d80.09!3d26.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4b7c8c8c8c8d%3A0x8c8c8c8c8c8c8c8c!2sDRS%20Food%20Point!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
