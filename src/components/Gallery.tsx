@@ -5,7 +5,7 @@ import burgerImg from "@/assets/burger.jpg";
 import cakeImg from "@/assets/cake.jpg";
 import chilliPotatoImg from "@/assets/chilli-potato.jpg";
 import noodlesImg from "@/assets/noodles.jpg";
-import pizzaImg from "@/assets/pizza.jpg";
+
 
 // Real restaurant photos
 import birthdayCelebrationImg from "@/assets/birthday-celebration.jpg";
@@ -23,7 +23,6 @@ const galleryImages = [
   { src: friendsGatheringImg, alt: "Friends Gathering", category: "ambiance" },
   { src: specialEventImg, alt: "Special Event", category: "events" },
   { src: burgerImg, alt: "Delicious Burger", category: "food" },
-  { src: pizzaImg, alt: "Fresh Pizza", category: "food" },
   { src: noodlesImg, alt: "Hot Noodles", category: "food" },
   { src: chilliPotatoImg, alt: "Chilli Potato", category: "food" },
   { src: cakeImg, alt: "Sweet Cake", category: "dessert" },
