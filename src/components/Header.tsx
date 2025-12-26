@@ -19,9 +19,14 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex flex-col">
-            <span className="text-xl md:text-2xl font-bold text-primary">DRS Food Point</span>
-            <span className="text-xs md:text-sm text-muted-foreground -mt-1">डीआरएस फूड पॉइंट</span>
+          <a href="#home" className="flex items-center gap-2">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg md:text-xl">D</span>
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="text-lg md:text-xl font-bold text-primary">DRS Food Point</span>
+              <span className="text-[10px] md:text-xs text-muted-foreground">डीआरएस फूड पॉइंट</span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
