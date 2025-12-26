@@ -65,7 +65,7 @@ const Hero = () => {
               <a href="tel:08423004192">Order by Phone</a>
             </Button>
             <Button size="lg" variant="outline" className="bg-card/10 border-card/30 text-card hover:bg-card/20" asChild>
-              <a href="https://maps.google.com/?q=DRS+Food+Point+Saurikh" target="_blank" rel="noopener noreferrer">
+              <a href="https://maps.app.goo.gl/BTxuyKsHoez2cbes9" target="_blank" rel="noopener noreferrer">
                 Get Directions
               </a>
             </Button>

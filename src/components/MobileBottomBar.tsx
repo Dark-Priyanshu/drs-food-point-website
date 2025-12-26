@@ -12,7 +12,7 @@ const MobileBottomBar = () => {
           Call Now
         </a>
         <a
-          href="https://maps.google.com/?q=DRS+Food+Point+Saurikh"
+          href="https://maps.app.goo.gl/BTxuyKsHoez2cbes9"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 py-4 bg-secondary text-secondary-foreground font-medium"

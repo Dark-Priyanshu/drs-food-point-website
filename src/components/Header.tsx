@@ -53,7 +53,7 @@ const Header = () => {
               </a>
             </Button>
             <Button size="sm" className="gap-1.5" asChild>
-              <a href="https://maps.google.com/?q=DRS+Food+Point+Saurikh" target="_blank" rel="noopener noreferrer">
+              <a href="https://maps.app.goo.gl/BTxuyKsHoez2cbes9" target="_blank" rel="noopener noreferrer">
                 <MapPin className="w-4 h-4" />
                 Directions
               </a>
@@ -91,7 +91,7 @@ const Header = () => {
                 </a>
               </Button>
               <Button size="sm" className="flex-1 gap-1.5" asChild>
-                <a href="https://maps.google.com/?q=DRS+Food+Point+Saurikh" target="_blank" rel="noopener noreferrer">
+                <a href="https://maps.app.goo.gl/BTxuyKsHoez2cbes9" target="_blank" rel="noopener noreferrer">
                   <MapPin className="w-4 h-4" />
                   Directions
                 </a>
