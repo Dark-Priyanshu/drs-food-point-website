@@ -25,37 +25,37 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-gradient-warm">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section id="about" className="py-12 sm:py-16 md:py-24 bg-gradient-warm">
+      <div className="container px-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             About <span className="text-primary">DRS Food Point</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2">
             Located in the heart of Saurikh, DRS Food Point has become a beloved local favorite 
             for fast food enthusiasts. We serve a wide variety of delicious snacks and meals 
             that bring families together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="bg-card rounded-xl p-6 shadow-card hover:shadow-lg transition-shadow animate-fade-up"
+              className="bg-card rounded-xl p-4 sm:p-6 shadow-card hover:shadow-lg transition-shadow animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground text-sm">{feature.description}</p>
+              <h3 className="text-sm sm:text-lg font-semibold text-foreground mb-1 sm:mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">{feature.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-foreground/80 text-lg">
+        <div className="mt-8 sm:mt-12 text-center px-2">
+          <p className="text-foreground/80 text-sm sm:text-base md:text-lg">
             Our popular items include <span className="text-primary font-medium">Pizza</span>, 
             <span className="text-primary font-medium"> Burgers</span>, 
             <span className="text-primary font-medium"> Chilli Potato</span>, 

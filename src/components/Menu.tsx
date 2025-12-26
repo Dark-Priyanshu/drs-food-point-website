@@ -49,46 +49,46 @@ const Menu = () => {
     : menuItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="menu" className="py-16 md:py-24 bg-card">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section id="menu" className="py-12 sm:py-16 md:py-24 bg-card">
+      <div className="container px-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             Our <span className="text-primary">Menu</span>
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
             Explore our delicious variety of fast food, snacks, and beverages
           </p>
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-10">
           {categories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
                 activeCategory === category.id
                   ? 'bg-primary text-primary-foreground shadow-glow'
                   : 'bg-muted text-muted-foreground hover:bg-muted/80'
               }`}
             >
-              {category.icon && <category.icon className="w-4 h-4" />}
+              {category.icon && <category.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
               {category.name}
             </button>
           ))}
         </div>
 
         {/* Menu Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
           {filteredItems.map((item, index) => (
             <div
               key={item.name}
-              className="bg-background rounded-xl p-4 border border-border hover:border-primary/30 hover:shadow-card transition-all animate-scale-in"
+              className="bg-background rounded-lg sm:rounded-xl p-3 sm:p-4 border border-border hover:border-primary/30 hover:shadow-card transition-all animate-scale-in"
               style={{ animationDelay: `${index * 0.03}s` }}
             >
               <div className="flex items-center justify-between">
-                <h3 className="font-medium text-foreground">{item.name}</h3>
-                <span className="text-primary font-bold">{item.price}</span>
+                <h3 className="font-medium text-foreground text-sm sm:text-base">{item.name}</h3>
+                <span className="text-primary font-bold text-sm sm:text-base">{item.price}</span>
               </div>
             </div>
           ))}

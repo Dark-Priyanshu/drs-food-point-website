@@ -43,10 +43,10 @@ const Reviews = () => {
   const averageRating = reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length;
 
   return (
-    <section id="reviews" className="py-16 md:py-24 bg-card">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section id="reviews" className="py-12 sm:py-16 md:py-24 bg-card">
+      <div className="container px-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             Customer <span className="text-primary">Reviews</span>
           </h2>
           <div className="flex items-center justify-center gap-2 mb-2">
@@ -54,7 +54,7 @@ const Reviews = () => {
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star
                   key={star}
-                  className={`w-6 h-6 ${
+                  className={`w-5 h-5 sm:w-6 sm:h-6 ${
                     star <= Math.round(averageRating)
                       ? 'text-secondary fill-secondary'
                       : 'text-muted-foreground'
@@ -62,30 +62,30 @@ const Reviews = () => {
                 />
               ))}
             </div>
-            <span className="text-xl font-bold text-foreground">{averageRating.toFixed(1)}</span>
-            <span className="text-muted-foreground">(231 reviews)</span>
+            <span className="text-lg sm:text-xl font-bold text-foreground">{averageRating.toFixed(1)}</span>
+            <span className="text-muted-foreground text-sm sm:text-base">(231 reviews)</span>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-background rounded-xl p-6 border border-border hover:border-primary/30 transition-all animate-fade-up"
+              className="bg-background rounded-xl p-4 sm:p-6 border border-border hover:border-primary/30 transition-all animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <Quote className="w-8 h-8 text-primary/20 mb-4" />
-              <p className="text-foreground/80 mb-4">{review.text}</p>
+              <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-primary/20 mb-3 sm:mb-4" />
+              <p className="text-foreground/80 mb-3 sm:mb-4 text-sm sm:text-base">{review.text}</p>
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-semibold text-foreground">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.date}</p>
+                  <p className="font-semibold text-foreground text-sm sm:text-base">{review.name}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{review.date}</p>
                 </div>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star
                       key={star}
-                      className={`w-4 h-4 ${
+                      className={`w-3 h-3 sm:w-4 sm:h-4 ${
                         star <= review.rating
                           ? 'text-secondary fill-secondary'
                           : 'text-muted-foreground'
