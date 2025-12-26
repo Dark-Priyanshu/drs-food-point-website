@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 
-import burgerImg from "@/assets/burger.jpg";
-import chilliPotatoImg from "@/assets/chilli-potato.jpg";
-import noodlesImg from "@/assets/noodles.jpg";
 
 
 // Real restaurant photos
@@ -21,9 +18,6 @@ const galleryImages = [
   { src: diningExperienceImg, alt: "Dining Experience", category: "ambiance" },
   { src: friendsGatheringImg, alt: "Friends Gathering", category: "ambiance" },
   { src: specialEventImg, alt: "Special Event", category: "events" },
-  { src: burgerImg, alt: "Delicious Burger", category: "food" },
-  { src: noodlesImg, alt: "Hot Noodles", category: "food" },
-  { src: chilliPotatoImg, alt: "Chilli Potato", category: "food" },
 ];
 
 const Gallery = () => {
