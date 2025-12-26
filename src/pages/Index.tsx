@@ -7,6 +7,7 @@ import Reviews from '@/components/Reviews';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import MobileBottomBar from '@/components/MobileBottomBar';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
       <MobileBottomBar />
     </div>
   );
